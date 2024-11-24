@@ -1,0 +1,9 @@
+package com.testdemo;
+
+public class TestCollection {
+
+	public static void main(String[] args) {
+      System.out.println("calling first block");
+	}
+
+}

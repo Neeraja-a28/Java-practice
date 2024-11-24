@@ -1,0 +1,18 @@
+package com.testdemo;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+      System.out.println("calling Main Method .....");
+      
+      Person p = new Person();
+      p.setName("Neeraja");
+      p.setEmail("neeraja@gmail.com");
+      p.setMobile(980098001);
+      
+      System.out.println(p.getName());
+      System.out.println(p.getEmail());
+      System.out.println(p.mobile);
+	}
+
+}

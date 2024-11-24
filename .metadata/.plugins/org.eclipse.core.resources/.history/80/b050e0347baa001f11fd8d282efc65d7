@@ -1,0 +1,39 @@
+package com.testdemo;
+
+public class TestException {
+	
+	public void add() {
+		
+		System.out.println("calling add method!..");
+		try {
+			int result = 10/0;
+		}
+		catch(NullPointerException e) {
+		System.out.println(e);	
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		finally {
+			System.out.println("calling finally block");
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("calling main method..");
+		TestException t = new TestException();
+		t.add();
+
+	}
+
+}
+
+class CustomException extends Exception {
+	public String CustomException(String message) {
+		return message;
+	}
+}
+

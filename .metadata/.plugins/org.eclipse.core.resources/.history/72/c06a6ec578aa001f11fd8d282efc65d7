@@ -1,0 +1,21 @@
+package com.testdemo;
+
+public class TestException {
+	
+	public void add() {
+		
+		System.out.println("calling add method!..");
+		try {
+			int result = 10/0;
+		}
+		catch(Exception e) {
+		System.out.println(e);	
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

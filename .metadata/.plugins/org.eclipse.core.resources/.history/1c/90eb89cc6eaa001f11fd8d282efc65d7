@@ -1,0 +1,21 @@
+package com.testdemo;
+
+public class Animal {
+	public void sound() {
+		System.out.println("calling animal sound method");
+	}
+
+}
+
+class Dog extends Animal{
+	
+	public static void main(String args[]) {
+	  System.out.println("main method ....");
+	  
+	  Dog d = new Dog();
+	  d.sound();
+	}
+	public void sound() {
+		System.out.println("caaling dog sound method");
+	}
+}

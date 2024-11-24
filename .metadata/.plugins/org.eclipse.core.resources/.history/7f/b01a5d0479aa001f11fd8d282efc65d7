@@ -1,0 +1,23 @@
+package com.testdemo;
+
+public class TestException {
+	
+	public void add() {
+		
+		System.out.println("calling add method!..");
+		try {
+			int result = 10/0;
+		}
+		catch(ArithmeticException e) {
+		System.out.println(e);	
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("calling main method..");
+		TestException t = new TestException();
+		t.add();
+
+	}
+
+}
